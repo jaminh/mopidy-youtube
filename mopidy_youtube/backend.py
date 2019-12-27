@@ -40,7 +40,7 @@ def safe_url(uri):
     safe_uri = unicodedata.normalize(
         'NFKD',
         str(uri)
-    ).encode('ASCII', 'ignore')
+    )
     return re.sub(
         '\s+',
         ' ',
@@ -80,7 +80,6 @@ def resolve_url(url, stream=False):
         length=video.length * 1000,
         album=Album(
             name='YouTube',
-            images=images
         ),
         uri=uri
     )
