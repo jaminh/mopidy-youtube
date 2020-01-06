@@ -1,4 +1,5 @@
 from mopidy_youtube import Extension
+
 # from mopidy_youtube import frontend as frontend_lib
 
 
